@@ -1,0 +1,910 @@
+[
+  {
+    "id": "dolphin",
+    "commonName": "Bottlenose Dolphin",
+    "scientificName": "Tursiops truncatus",
+    "habitat": "Open ocean and coastal waters worldwide",
+    "diet": "Fish, squid, and crustaceans",
+    "lengthCm": [
+      200,
+      400
+    ],
+    "weightG": [
+      150000,
+      650000
+    ],
+    "lifespanYears": 45,
+    "threats": [
+      "Bycatch in fishing nets",
+      "Pollution",
+      "Habitat disturbance"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "Dolphins sleep with only half their brain at a time so they can keep breathing.",
+      "Each dolphin has a signature whistle that works like a name.",
+      "They can swim in bursts of over 30 km/h."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "reef-associated",
+      "open-water",
+      "surfaces-for-air"
+    ],
+    "modelPath": "/models/species/dolphin.glb"
+  },
+  {
+    "id": "reefShark",
+    "commonName": "Reef Shark",
+    "scientificName": "Carcharhinus melanopterus",
+    "habitat": "Shallow coral reefs and lagoons",
+    "diet": "Small reef fish, cephalopods, and crustaceans",
+    "lengthCm": [
+      120,
+      180
+    ],
+    "weightG": [
+      18000,
+      45000
+    ],
+    "lifespanYears": 25,
+    "threats": [
+      "Overfishing",
+      "Finning",
+      "Reef habitat loss"
+    ],
+    "conservationStatus": "Vulnerable",
+    "funFacts": [
+      "Reef sharks often rest motionless on the sand by pumping water over their gills.",
+      "They are naturally cautious of large, unfamiliar movement.",
+      "Pups are born fully independent and receive no parental care."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated"
+    ]
+  },
+  {
+    "id": "moray",
+    "commonName": "Giant Moray",
+    "scientificName": "Gymnothorax javanicus",
+    "habitat": "Holes and crevices in coral reefs and wrecks",
+    "diet": "Fish and octopus, hunted after dark",
+    "lengthCm": [
+      150,
+      250
+    ],
+    "weightG": [
+      15000,
+      30000
+    ],
+    "lifespanYears": 30,
+    "threats": [
+      "Reef destruction",
+      "Aquarium collection",
+      "Ciguatera-driven fishing pressure"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "The open mouth is not a threat — it has no gill covers, so it has to gape constantly to breathe.",
+      "A second set of jaws in its throat shoots forward to drag prey down, the only animal known to feed this way.",
+      "It hunts by smell, and reef fish will lead one to hidden prey and share the catch."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary",
+      "den-dwelling",
+      "reef-associated"
+    ]
+  },
+  {
+    "id": "hammerhead",
+    "commonName": "Scalloped Hammerhead",
+    "scientificName": "Sphyrna lewini",
+    "habitat": "Warm coastal shelves, seamounts and reef drop-offs",
+    "diet": "Fish, squid, and rays taken off the bottom",
+    "lengthCm": [
+      250,
+      370
+    ],
+    "weightG": [
+      80000,
+      150000
+    ],
+    "lifespanYears": 30,
+    "threats": [
+      "Finning for the shark-fin trade",
+      "Bycatch in longline and gillnet fisheries",
+      "Loss of coastal nursery grounds"
+    ],
+    "conservationStatus": "Critically Endangered",
+    "funFacts": [
+      "The wide head spreads their electrical sensors over a broader sweep, letting them find rays buried under the sand.",
+      "With an eye on each tip, a hammerhead can see all the way around itself from above and below at the same time.",
+      "They gather over seamounts in schools by day and split up to hunt alone at night."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "reef-associated"
+    ]
+  },
+  {
+    "id": "barracuda",
+    "commonName": "Great Barracuda",
+    "scientificName": "Sphyraena barracuda",
+    "habitat": "Reef edges, wrecks and open water near structure",
+    "diet": "Fish, taken in a single strike from ambush",
+    "lengthCm": [
+      100,
+      180
+    ],
+    "weightG": [
+      9000,
+      23000
+    ],
+    "lifespanYears": 14,
+    "threats": [
+      "Overfishing of the reef fish it hunts",
+      "Habitat loss",
+      "Reef degradation"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "It accelerates to around 58 km/h in a straight line — one of the fastest bursts of any fish.",
+      "The lower jaw sticks out past the upper one, so the teeth stay visible even when the mouth is shut.",
+      "Young ones travel in schools; a large adult usually hangs alone, motionless, and simply watches."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "open-water"
+    ]
+  },
+  {
+    "id": "seaTurtle",
+    "commonName": "Green Sea Turtle",
+    "scientificName": "Chelonia mydas",
+    "habitat": "Tropical and subtropical seagrass beds and reefs",
+    "diet": "Seagrass and algae (herbivorous as adults)",
+    "lengthCm": [
+      80,
+      120
+    ],
+    "weightG": [
+      65000,
+      190000
+    ],
+    "lifespanYears": 70,
+    "threats": [
+      "Plastic pollution",
+      "Boat strikes",
+      "Nesting beach loss"
+    ],
+    "conservationStatus": "Endangered",
+    "funFacts": [
+      "Green sea turtles can hold their breath for several hours while resting.",
+      "They migrate thousands of kilometers between feeding and nesting grounds.",
+      "Their shell color comes from body fat tinted green by their algae diet."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated",
+      "open-water"
+    ],
+    "modelPath": "/models/species/sea-turtle.glb"
+  },
+  {
+    "id": "clownfish",
+    "commonName": "Clownfish",
+    "scientificName": "Amphiprion ocellaris",
+    "habitat": "Coral reefs, sheltering among sea anemones",
+    "diet": "Algae, zooplankton, and small invertebrates",
+    "lengthCm": [
+      10,
+      18
+    ],
+    "weightG": [
+      10,
+      30
+    ],
+    "lifespanYears": 6,
+    "threats": [
+      "Coral bleaching",
+      "Ocean acidification",
+      "Aquarium over-collection"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "Clownfish are immune to their host anemone's sting thanks to a protective mucus layer.",
+      "All clownfish are born male and can change sex to become the dominant female.",
+      "They rarely stray far from their home anemone."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "reef-associated"
+    ]
+  },
+  {
+    "id": "lionfish",
+    "commonName": "Red Lionfish",
+    "scientificName": "Pterois volitans",
+    "habitat": "Reef ledges, overhangs and wreckage",
+    "diet": "Small fish and shrimp, cornered with the pectoral fans",
+    "lengthCm": [
+      30,
+      42
+    ],
+    "weightG": [
+      700,
+      1200
+    ],
+    "lifespanYears": 15,
+    "threats": [
+      "Aquarium collection in its native Indo-Pacific range",
+      "Reef degradation across the range it belongs to"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "Eighteen of its fin rays are venomous spines — painful to a human, and the reason it never bothers to flee.",
+      "It herds small fish into a corner with its spread pectoral fans before swallowing them whole.",
+      "Released into the Atlantic by the aquarium trade, it now eats its way through reefs that have no defence against it."
+    ],
+    "activity": "crepuscular",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated"
+    ]
+  },
+  {
+    "id": "jellyfish",
+    "commonName": "Pacific Sea Nettle",
+    "scientificName": "Chrysaora fuscescens",
+    "habitat": "Open coastal water, often in drifting swarms near the surface",
+    "diet": "Zooplankton, fish eggs and larvae, and other jellyfish",
+    "lengthCm": [
+      15,
+      50
+    ],
+    "weightG": [
+      500,
+      5000
+    ],
+    "lifespanYears": 1,
+    "threats": [
+      "Warming waters (can favor blooms)",
+      "Plastic entanglement"
+    ],
+    "conservationStatus": "Not Evaluated",
+    "funFacts": [
+      "A sea nettle has no brain, no heart and no blood — only a net of nerves around the rim of its bell.",
+      "Its trailing tentacles can be several metres long behind a bell the width of a dinner plate.",
+      "It cannot swim against a current; the pulsing only moves it up and down, and the sea does the rest."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "drifting",
+      "open-water"
+    ],
+    "modelPath": "/models/species/jellyfish.glb"
+  },
+  {
+    "id": "anglerfish",
+    "commonName": "Humpback Anglerfish",
+    "scientificName": "Melanocetus johnsonii",
+    "habitat": "The midnight zone, below a thousand metres",
+    "diet": "Whatever swims into the lure, up to twice its own size",
+    "lengthCm": [
+      15,
+      20
+    ],
+    "weightG": [
+      80,
+      200
+    ],
+    "lifespanYears": 25,
+    "threats": [
+      "Deep-sea trawling",
+      "Changes in the sinking food supply from above"
+    ],
+    "conservationStatus": "Not Evaluated",
+    "funFacts": [
+      "The glowing lure is not its own light — it is a colony of bacteria the fish keeps and feeds.",
+      "Its skin reflects less than half a percent of the light that hits it, making it one of the blackest materials in nature.",
+      "Its stomach stretches far enough to swallow prey larger than itself, because a meal down here may be the last for months."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary"
+    ]
+  },
+  {
+    "id": "blueWhale",
+    "commonName": "Blue Whale",
+    "scientificName": "Balaenoptera musculus",
+    "habitat": "Open ocean worldwide, migrating between polar feeding and tropical breeding grounds",
+    "diet": "Almost entirely krill, filtered through baleen plates",
+    "lengthCm": [
+      2400,
+      3000
+    ],
+    "weightG": [
+      100000000,
+      190000000
+    ],
+    "lifespanYears": 90,
+    "threats": [
+      "Ship strikes",
+      "Entanglement in fishing gear",
+      "Ocean noise",
+      "Krill decline from warming seas"
+    ],
+    "conservationStatus": "Endangered",
+    "funFacts": [
+      "The largest animal known to have ever lived — bigger than any dinosaur.",
+      "Its call carries for hundreds of kilometres and is louder than a jet engine.",
+      "A single mouthful can hold up to 80 cubic metres of water and krill.",
+      "Its heart alone weighs about as much as a small car."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "open-water",
+      "surfaces-for-air"
+    ]
+  },
+  {
+    "id": "orca",
+    "commonName": "Orca",
+    "scientificName": "Orcinus orca",
+    "habitat": "Every ocean, from polar ice edges to the tropics",
+    "diet": "Fish, seals, squid — diet varies sharply between populations",
+    "lengthCm": [
+      500,
+      800
+    ],
+    "weightG": [
+      2600000,
+      6000000
+    ],
+    "lifespanYears": 60,
+    "threats": [
+      "Chemical pollution (PCBs)",
+      "Prey depletion",
+      "Ocean noise",
+      "Historic live capture"
+    ],
+    "conservationStatus": "Data Deficient",
+    "funFacts": [
+      "Pods have their own dialects, passed down through generations.",
+      "Females can live past eighty and lead the pod long after they stop breeding.",
+      "Different populations hunt such different prey that they rarely interbreed.",
+      "The tall dorsal fin of an adult male can stand nearly two metres high."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "open-water",
+      "surfaces-for-air"
+    ],
+    "modelPath": "/models/species/orca.glb"
+  },
+  {
+    "id": "giantManta",
+    "commonName": "Giant Oceanic Manta Ray",
+    "scientificName": "Mobula birostris",
+    "habitat": "Tropical and temperate open ocean, often near seamounts and reef cleaning stations",
+    "diet": "Zooplankton and small fish, filtered while swimming",
+    "lengthCm": [
+      400,
+      700
+    ],
+    "weightG": [
+      1000000,
+      2000000
+    ],
+    "lifespanYears": 45,
+    "threats": [
+      "Targeted fishing for gill plates",
+      "Bycatch",
+      "Boat strikes",
+      "Habitat disturbance"
+    ],
+    "conservationStatus": "Endangered",
+    "funFacts": [
+      "Wingspans reach seven metres, making it the largest ray in the ocean.",
+      "It has the largest brain of any fish and appears to recognise itself in mirrors.",
+      "Each manta's belly spot pattern is unique, like a fingerprint.",
+      "It visits reef cleaning stations and waits for small fish to groom it."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "open-water",
+      "reef-associated"
+    ]
+  },
+  {
+    "id": "eagleRay",
+    "commonName": "Spotted Eagle Ray",
+    "scientificName": "Aetobatus narinari",
+    "habitat": "Sandy flats, reef edges and lagoons in warm seas",
+    "diet": "Clams, oysters and snails crushed with plated jaws",
+    "lengthCm": [
+      150,
+      250
+    ],
+    "weightG": [
+      90000,
+      230000
+    ],
+    "lifespanYears": 20,
+    "threats": [
+      "Targeted and incidental fishing",
+      "Loss of shallow feeding grounds",
+      "Coastal water pollution"
+    ],
+    "conservationStatus": "Endangered",
+    "funFacts": [
+      "It digs shellfish out of the sand with a snout shaped like a duck's bill, then crushes the shells with flat plates instead of teeth.",
+      "The white spots are unique to each animal, the way a fingerprint is.",
+      "It leaps clear of the surface and lands flat — nobody is certain why."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "reef-associated"
+    ]
+  },
+  {
+    "id": "octopus",
+    "commonName": "Common Octopus",
+    "scientificName": "Octopus vulgaris",
+    "habitat": "Rocky reefs and crevices in warm coastal water",
+    "diet": "Crabs, shellfish and small fish",
+    "lengthCm": [
+      60,
+      130
+    ],
+    "weightG": [
+      3000,
+      10000
+    ],
+    "lifespanYears": 2,
+    "threats": [
+      "Habitat loss on rocky reefs",
+      "Targeted fishing",
+      "Warming coastal water"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "An octopus can change both colour and skin texture in under a second.",
+      "Two thirds of its neurons are in its arms, so each arm partly thinks for itself.",
+      "It can squeeze through any gap wider than its beak — the only hard part of its body.",
+      "It keeps a den under a rock and piles the shells of everything it has eaten around the entrance — divers find the midden before they find the octopus."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated",
+      "den-dwelling"
+    ]
+  },
+  {
+    "id": "nautilus",
+    "commonName": "Chambered Nautilus",
+    "scientificName": "Nautilus pompilius",
+    "habitat": "Deep reef slopes and caverns of the tropical Pacific",
+    "diet": "Carrion and moulted shells, found by smell",
+    "lengthCm": [
+      16,
+      22
+    ],
+    "weightG": [
+      600,
+      1300
+    ],
+    "lifespanYears": 20,
+    "threats": [
+      "Shell collecting",
+      "Deep trapping for the ornament trade",
+      "Slow reproduction"
+    ],
+    "conservationStatus": "Endangered",
+    "funFacts": [
+      "Its shell is divided into sealed chambers it floods and empties to control depth, like a submarine's ballast.",
+      "It has around ninety tentacles and not one of them has a sucker.",
+      "The eye is a pinhole with no lens at all — an open pit that fills with seawater."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary",
+      "drifting"
+    ]
+  },
+  {
+    "id": "cuttlefish",
+    "commonName": "Common Cuttlefish",
+    "scientificName": "Sepia officinalis",
+    "habitat": "Sand, seagrass and kelp in shallow coastal water",
+    "diet": "Crabs, shrimp and small fish taken with two shooting tentacles",
+    "lengthCm": [
+      30,
+      49
+    ],
+    "weightG": [
+      1000,
+      4000
+    ],
+    "lifespanYears": 2,
+    "threats": [
+      "Trawling",
+      "Warming and acidifying coastal seas",
+      "Loss of seagrass nursery grounds"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "It changes colour and texture in under a second, and it does this while being colour-blind.",
+      "The pupil is shaped like a W, which lets it judge distance without moving its head.",
+      "Inside is the cuttlebone — a gas-filled shell it fills and empties to hover without swimming."
+    ],
+    "activity": "crepuscular",
+    "behaviorTags": [
+      "solitary"
+    ]
+  },
+  {
+    "id": "crab",
+    "commonName": "European Spider Crab",
+    "scientificName": "Maja squinado",
+    "habitat": "Sandy and rocky seabeds down to the edge of the shelf",
+    "diet": "Algae, molluscs and whatever it can scavenge",
+    "lengthCm": [
+      15,
+      25
+    ],
+    "weightG": [
+      800,
+      2500
+    ],
+    "lifespanYears": 8,
+    "threats": [
+      "Trawling",
+      "Coastal development"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "Spider crabs pile into mounds thousands deep to moult in safety.",
+      "One claw is usually larger than the other, and it is not always the same side.",
+      "They decorate their shells with seaweed and sponge to disappear."
+    ],
+    "activity": "crepuscular",
+    "behaviorTags": [
+      "solitary"
+    ]
+  },
+  {
+    "id": "yetiCrab",
+    "commonName": "Yeti Crab",
+    "scientificName": "Kiwa tyleri",
+    "habitat": "Cold seeps and hydrothermal vents on the deep sea floor",
+    "diet": "Bacteria farmed on the bristles of its own claws",
+    "lengthCm": [
+      10,
+      15
+    ],
+    "weightG": [
+      60,
+      140
+    ],
+    "lifespanYears": 10,
+    "threats": [
+      "Deep-sea mining of vent fields",
+      "Extremely small and isolated populations"
+    ],
+    "conservationStatus": "Not Evaluated",
+    "funFacts": [
+      "The hair on its claws is a garden — it grows bacteria there and then combs them off and eats them.",
+      "It waves its claws through the chemical plume the way a farmer waters a crop.",
+      "It is blind, and it lives where sunlight has never reached, so the whole food chain around it runs on chemistry instead."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary"
+    ]
+  },
+  {
+    "id": "starfish",
+    "commonName": "Common Sea Star",
+    "scientificName": "Asterias rubens",
+    "habitat": "Rocky and sandy seabeds in shallow coastal water",
+    "diet": "Mussels, clams and barnacles",
+    "lengthCm": [
+      10,
+      30
+    ],
+    "weightG": [
+      80,
+      400
+    ],
+    "lifespanYears": 7,
+    "threats": [
+      "Wasting disease outbreaks",
+      "Warming shallow water"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "A sea star can regrow a lost arm, and some can regrow a whole body from one.",
+      "It eats by pushing its stomach out through its mouth and digesting prey outside itself.",
+      "It has no brain and no blood — it runs on seawater pumped through its body."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated"
+    ]
+  },
+  {
+    "id": "seal",
+    "commonName": "Grey Seal",
+    "scientificName": "Halichoerus grypus",
+    "habitat": "Cold coastal water, kelp beds and rocky shores",
+    "diet": "Fish, squid and crustaceans",
+    "lengthCm": [
+      180,
+      260
+    ],
+    "weightG": [
+      150000,
+      310000
+    ],
+    "lifespanYears": 35,
+    "threats": [
+      "Entanglement in fishing gear",
+      "Disturbance at haul-out sites",
+      "Pollution"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "A grey seal can hold its breath for well over twenty minutes.",
+      "Its whiskers track the wake a fish left behind, so it can hunt in total darkness.",
+      "Every seal's coat pattern is unique, which is how researchers tell them apart."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "surfaces-for-air"
+    ]
+  },
+  {
+    "id": "emperorPenguin",
+    "commonName": "Emperor Penguin",
+    "scientificName": "Aptenodytes forsteri",
+    "habitat": "Antarctic pack ice and the water beneath it",
+    "diet": "Fish, krill and squid caught on long dives",
+    "lengthCm": [
+      110,
+      130
+    ],
+    "weightG": [
+      22000,
+      45000
+    ],
+    "lifespanYears": 20,
+    "threats": [
+      "Loss of the sea ice it breeds on",
+      "Warming Southern Ocean",
+      "Shifts in krill stocks"
+    ],
+    "conservationStatus": "Near Threatened",
+    "funFacts": [
+      "It dives deeper than 500 metres and can stay under for over twenty minutes on one breath.",
+      "Underwater it flies — the flippers are stiff wings that beat against water instead of air.",
+      "Males incubate the single egg on their feet through the Antarctic winter, eating nothing for two months."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "surfaces-for-air"
+    ]
+  },
+  {
+    "id": "whaleShark",
+    "commonName": "Whale Shark",
+    "scientificName": "Rhincodon typus",
+    "habitat": "Warm open ocean, often near the surface",
+    "diet": "Plankton and small fish, filtered from the water",
+    "lengthCm": [
+      550,
+      1200
+    ],
+    "weightG": [
+      9000000,
+      20000000
+    ],
+    "lifespanYears": 80,
+    "threats": [
+      "Ship strikes",
+      "Targeted and accidental fishing",
+      "Warming and shifting plankton blooms"
+    ],
+    "conservationStatus": "Endangered",
+    "funFacts": [
+      "The largest fish alive, and it eats almost nothing bigger than your fingernail.",
+      "Every whale shark's pattern of spots is unique, so researchers identify them the way we use fingerprints.",
+      "It filters over six thousand litres of water an hour and never has to bite anything."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "open-water"
+    ]
+  },
+  {
+    "id": "humpback",
+    "commonName": "Humpback Whale",
+    "scientificName": "Megaptera novaeangliae",
+    "habitat": "Open ocean, migrating between polar feeding grounds and warm breeding water",
+    "diet": "Krill and small schooling fish",
+    "lengthCm": [
+      1200,
+      1600
+    ],
+    "weightG": [
+      25000000,
+      30000000
+    ],
+    "lifespanYears": 50,
+    "threats": [
+      "Entanglement in fishing gear",
+      "Ship strikes",
+      "Underwater noise disrupting song"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "Its flippers are nearly a third of its body length — the longest limbs of any animal alive.",
+      "Males sing songs that last twenty minutes and change a little every year, and every whale in an ocean sings the same one.",
+      "It blows a curtain of bubbles around a shoal of fish to herd them into a ball, then swims up through the middle."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "surfaces-for-air",
+      "open-water"
+    ]
+  },
+  {
+    "id": "narwhal",
+    "commonName": "Narwhal",
+    "scientificName": "Monodon monoceros",
+    "habitat": "Arctic waters and the leads between pack ice",
+    "diet": "Halibut, cod and squid taken in deep winter dives",
+    "lengthCm": [
+      400,
+      550
+    ],
+    "weightG": [
+      900000,
+      1600000
+    ],
+    "lifespanYears": 50,
+    "threats": [
+      "Loss of sea ice",
+      "Shipping noise in the Arctic",
+      "Entrapment when leads freeze over"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "The tusk is a single tooth that grows out through the upper lip, and it always spirals to the left.",
+      "It has no dorsal fin — a fin would catch on the ice it lives under, so it carries a low ridge instead.",
+      "The tusk is packed with nerve endings and appears to taste the water around it."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "surfaces-for-air"
+    ]
+  },
+  {
+    "id": "neonTetra",
+    "commonName": "Neon Tetra",
+    "scientificName": "Paracheirodon innesi",
+    "habitat": "Blackwater and clearwater streams of the western Amazon basin",
+    "diet": "Larvae, tiny crustaceans, and algae",
+    "lengthCm": [
+      3,
+      4
+    ],
+    "weightG": [
+      0.1,
+      0.2
+    ],
+    "lifespanYears": 5,
+    "threats": [
+      "Deforestation and silt in Amazon headwaters",
+      "Collection for the aquarium trade",
+      "Acidification and pollution of blackwater streams"
+    ],
+    "conservationStatus": "Not Evaluated",
+    "funFacts": [
+      "The blue stripe is not a pigment. It is a layer of guanine crystals that scatters light, which is why it flares and dims as the fish turns.",
+      "They switch it off at night: the stripe fades to violet-grey while the fish sleeps, and comes back at first light.",
+      "Their home streams run the colour of strong tea, stained by tannins from the leaf litter of the flooded forest.",
+      "A shoal holds together by sight alone, so it scatters in the dark and re-forms at dawn."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling"
+    ],
+    "modelPath": "/models/species/neon-tetra.glb"
+  },
+  {
+    "id": "greatWhite",
+    "commonName": "Great White Shark",
+    "scientificName": "Carcharodon carcharias",
+    "habitat": "Cool and temperate coastal waters, often near seal colonies",
+    "diet": "Seals, sea lions, large fish, and carrion",
+    "lengthCm": [
+      400,
+      600
+    ],
+    "weightG": [
+      680000,
+      1100000
+    ],
+    "lifespanYears": 70,
+    "threats": [
+      "Bycatch in fishing gear",
+      "Trophy and fin fishing",
+      "Prey depletion"
+    ],
+    "conservationStatus": "Vulnerable",
+    "funFacts": [
+      "A great white keeps its body several degrees warmer than the sea around it, which lets it hunt in cold water.",
+      "It can sense the faint electrical fields of a hidden animal through jelly-filled pores in its snout.",
+      "Individuals cross entire ocean basins and return to the same coast years later."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "open-water"
+    ],
+    "modelPath": "/models/species/great-white.glb"
+  },
+  {
+    "id": "leopardShark",
+    "commonName": "Leopard Shark",
+    "scientificName": "Triakis semifasciata",
+    "habitat": "Shallow sandy flats, kelp edges and estuaries",
+    "diet": "Crabs, clam siphons, burrowing worms and small fish",
+    "lengthCm": [
+      120,
+      180
+    ],
+    "weightG": [
+      9000,
+      22000
+    ],
+    "lifespanYears": 30,
+    "threats": [
+      "Coastal development",
+      "Estuary pollution",
+      "Slow reproduction"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "The leopard shark's saddle markings are unique to each animal, the way a fingerprint is.",
+      "It feeds by pushing its jaws out to suck prey from the sand rather than biting.",
+      "Large groups gather in warm shallows at high tide and disperse as the water drops."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "reef-associated"
+    ],
+    "modelPath": "/models/species/leopard-shark.glb"
+  }
+]

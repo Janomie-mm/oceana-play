@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no"
+    />
+    <meta name="theme-color" content="#031b2e" />
+    <title>OCEANA</title>
+    <!--
+      Inline, so it costs no request. Without any icon at all the browser asks
+      for /favicon.ico on every load and is told 404 — which is harmless, and
+      which sat in every network log taken to prove the published build asks
+      for nothing it cannot get. An instrument with a known false positive in it
+      is an instrument nobody reads carefully.
+    -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23031b2e'/%3E%3Cpath d='M3 12q6.5-5 13 0t13 0' stroke='%234fc3d9' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M3 20q6.5-5 13 0t13 0' stroke='%232e8fb0' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3Cpath d='M3 27.5q6.5-5 13 0t13 0' stroke='%231d6486' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"
+    />
+    <script type="module" crossorigin src="/oceana-play/assets/index-B1KhRyvF.js"></script>
+    <link rel="stylesheet" crossorigin href="/oceana-play/assets/index-Mzk11i8K.css">
+  </head>
+  <body>
+    <div id="app-root">
+      <canvas id="game-canvas"></canvas>
+      <div id="ui-root"></div>
+      <!--
+        Something to look at while the ocean is built. The canvas is hidden
+        until there is a world to show and the title mounts after that, so
+        without this the first seconds are a plain dark rectangle — which is
+        indistinguishable from a page that failed to load.
+      -->
+      <div id="booting" role="status">
+        <div class="booting-mark"></div>
+        <p class="booting-title">Building the ocean</p>
+        <p class="booting-stage" id="booting-stage">Starting up</p>
+      </div>
+      <!--
+        Shown only where scripts do not run at all, and it exists because of a
+        real afternoon lost to it.
+
+        This game was opened in a viewer that renders HTML and CSS but executes
+        no JavaScript. The spinner above is a CSS animation, so it turned
+        happily for five minutes while nothing whatsoever loaded, and the
+        watchdog below — which would have said so after forty-five seconds — is
+        itself a script and so never ran either. Every signal the page had for
+        "I am working" kept working; the only thing that stopped was the work.
+
+        A <noscript> block is the one message that survives that, because the
+        browser renders it precisely when scripts are off. It costs nothing when
+        they are on.
+      -->
+      <noscript>
+        <div class="booting-blocked">
+          <p><strong>This viewer is not running the game.</strong></p>
+          <p>
+            The spinner above is just an animation — nothing is loading, and waiting
+            will not help. OCEANA needs JavaScript and WebGL.
+          </p>
+          <p>
+            Save this file and open it in a browser instead: Safari, Chrome or Firefox
+            will all run it.
+          </p>
+        </div>
+      </noscript>
+    </div>
+    <!--
+      The watchdog, deliberately in a script of its own and deliberately written
+      in the plainest JavaScript in the project.
+
+      The panel above is static markup, so it shows whether or not the game
+      bundle ever ran. That means "I see the loading screen" is equally
+      consistent with the bundle working and with the bundle never having
+      parsed — a browser too old for the build's syntax throws before the first
+      statement, and the result on screen is a spinner that never changes. This
+      script parses separately from the bundle, so it survives that, and it
+      turns a silent stall into a message that names what happened.
+    -->
+    <script>
+      (function () {
+        var started = Date.now();
+        function say(message, detail) {
+          var panel = document.getElementById("booting");
+          if (!panel || panel.classList.contains("done")) return;
+          panel.classList.add("stalled");
+          var stage = document.getElementById("booting-stage");
+          if (stage) stage.textContent = message;
+          var line = document.getElementById("booting-detail");
+          if (!line) {
+            line = document.createElement("p");
+            line.id = "booting-detail";
+            line.className = "booting-detail";
+            panel.appendChild(line);
+          }
+          line.textContent = detail || "";
+        }
+        // An error thrown out of the bundle never reaches the game's own
+        // failure screen, because that screen is inside the bundle.
+        window.addEventListener("error", function (event) {
+          say("OCEANA could not start", String((event && event.message) || "Unknown error"));
+        });
+        window.addEventListener("unhandledrejection", function (event) {
+          var reason = event && event.reason;
+          say("OCEANA could not start", String((reason && reason.message) || reason || "Unknown error"));
+        });
+        // Building the world legitimately takes a while on a phone, so this is
+        // set well past the slowest measured start-up rather than at a duration
+        // that would cry wolf.
+        setTimeout(function () {
+          if (window.__OCEANA_BOOT_DONE__) return;
+          var stage = window.__OCEANA_BOOT_STAGE__;
+          var seconds = Math.round((Date.now() - started) / 1000);
+          if (stage) {
+            // It is running, just slowly. Say so rather than accusing it.
+            say("Still working — " + stage.toLowerCase(), seconds + " seconds in. Older phones take longer.");
+          } else {
+            say(
+              "OCEANA could not start",
+              "The game did not begin loading after " +
+                seconds +
+                " seconds. This usually means the browser is too old for it — try Chrome, or Safari on iOS 16 or newer.",
+            );
+          }
+        }, 45000);
+      })();
+    </script>
+  </body>
+</html>

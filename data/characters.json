@@ -1,0 +1,103 @@
+{
+  "characters": [
+    {
+      "id": "diver",
+      "title": "Diver",
+      "modelPath": "/models/base-character.glb",
+      "source": "Khronos glTF-Sample-Assets \"RiggedFigure\" (Cesium)",
+      "licence": "CC BY 4.0 — see CREDITS.md",
+      "orientationDegrees": [
+        0,
+        0,
+        0
+      ],
+      "stature": 1.4525,
+      "skeleton": {},
+      "clips": {},
+      "sockets": {
+        "mask": [
+          0,
+          0.9101,
+          -0.0289
+        ],
+        "tank": [
+          0,
+          0.6781,
+          0.0792
+        ],
+        "beltBuckle": [
+          0,
+          0.5714,
+          -0.0565
+        ],
+        "finL": [
+          0,
+          0.0,
+          0
+        ],
+        "finR": [
+          0,
+          0.0,
+          0
+        ]
+      },
+      "note": "Placeholder rig only — its mesh is a 370-vertex skinning proxy, so the body is generated (see avatar/body/). Replace with a rigged professional diver: wetsuit, mask, tank, gloves, fins, fingered hands, facial geometry, and a looping swim clip. Set clips.swim to its name and drop the generated body by leaving this modelPath pointing at the new file."
+    },
+    {
+      "id": "merperson",
+      "title": "Merperson",
+      "modelPath": "/models/mermaid-supplied.glb",
+      "source": "The project owner's own model, delivered as Mermaid.usdz",
+      "licence": "Owner's own work — no third-party licence applies; see CREDITS.md",
+      "note": "The owner's own rigged mermaid, converted from USDZ by tools/export-mermaid-usdz.py. Replaces Sintel, who stays in the repository at /models/sintel-mermaid.glb and was only ever a stand-in: the reason she was chosen over the commissioned /models/mermaid.glb was that the commissioned one has no face and no hands, and this one has both, sculpted, plus scales, a bilobed fluke and its own hair. \n\nEvery bone in this rig is named `n16`, `n17`, `n18` -- a Sketchfab FBX export with its names stripped -- so the fifteen below were identified from the geometry rather than read off a label, and each one is a measurement. The trunk was found by taking, for every bone bound to the body mesh, the weight-weighted centroid of the skin it moves: a bone's own rest position sits at the origin for most of this rig, because the FBX's transform nodes became bones, but the skin a bone actually moves cannot be anywhere except where that body part is. Sorted along the figure and filtered to the centre line, that gives waist to crown in order: n69 at 0.785 m, n36 at 0.935, n72 at 1.018, n570 at 1.249, n574 at 1.395. The arms are the same list read across the body instead of along it -- n629 at x=0.16, n631 at 0.33, n633 at 0.48 with five children hanging off it, which is a hand -- and n803/n805/n807 are their mirror. The tail is the one long centred chain, n47 through n54, which then splits into two symmetric chains: this fluke has two lobes, and that is the model's shape rather than the double tail that was reported here once before.\n\nOrientation is a quarter turn about X, and the first attempt at it was wrong in a way worth keeping. The measurements were right: fluke-to-head is (0, 0.009, -1.0) in glTF axes and the iris sits at (0, -0.79, -0.61) from the head bone, so as authored she lies flat, pointing along -Z with her face downward. From that it was set to zero, on the reasoning that -Z is three.js forward and she was therefore already swimming the right way.\n\nShe was, and it was still wrong, because that is not the frame this asks for. Stature space wants a character standing Y-up with its feet at 0 and its crown at 1 -- see CharacterRig -- and `stature` is measured as the Y extent *after* the orientation is applied. Left at zero, her Y extent is 0.273 m, which is not her height but her thickness lying down. The game reported it: \"15 of 23 bone roles resolved; stature 0.273\". Everything expressed as a fraction of stature -- where gear sits, how the fluke is sized, how long the hair is -- would have been built at about a fifth of its proper size, and nothing would have thrown.\n\nA quarter turn about X carries (0, 0, -1) to (0, 1, 0), which stands her up, and carries her face from (0, -1, 0) to (0, 0, -1), which is forward. Upright and facing the right way, both from the same rotation, because a figure lying face-down is a standing figure tipped forward and nothing else. Sintel needs half a turn about Y instead, because she is authored upright already and merely faces the wrong way; the two entries disagree about the axis for that reason and not because either was guessed.\n\nShe supplies her hair, her fluke and her scales, and this list has to say so. Sintel's entry says it for the fluke alone and spells out the consequence of not saying it: the builder mounts a generated fin on a tail-end bone that is already occupied, and it was reported as a double tail. Scales are the same trap without the geometry -- they are a shader patch composed onto whatever material the tail tint lands on, so a texture that already has scales painted into it gets a second grid drawn over the first at a different pitch, which reads as neither.\n\nHair is on the list, and getting there took a wrong turn worth recording. Her own hair was dropped at export on a measurement that was correct and beside the point: it hangs 0.163 m from the head bone against 0.535 m from her head to her hips, so it is shoulder length, and long hair had been asked for. The game's generated hair is far longer.\n\nIt is also four nested sheets and some locks fitted to an *estimated* ellipsoid, and no estimate of a head sits on a head the way a mesh authored for it does. Fitting it here took three goes -- a skull half her head's width, because her face rig spreads the scalp over eighty-nine bones and almost nothing cleared the weight threshold on the head bone alone; then one that swallowed her shoulders, because a bounding box is set by its two most extreme vertices and above the neck joint those sit on the neck; then a percentile trim that finally gave 0.136 by 0.221 by 0.157, a human head. And at the end of all three it still read as flat ribbons with a bright rim down every edge.\n\nHer own hair is sculpted: strand flow, a parting, a sweep, fine wispy ends, and it fits her skull exactly because it was modelled on it. It is kept at 18,000 of its 39,710 triangles -- a lighter cut than anything else here, because the wispy edge is most of why it reads as hair -- and its texture stays at 1024. Length is the lesser property: a style that fits and reads as hair beats one that is long and reads as tape.\n\nTints are skin, tail and eyes, and the tail is why the export splits the body mesh. The source paints skin, scales and everything between with one material and one 2048 texture, so as delivered there is one colour swatch for the whole figure and \"change the tail colour\" cannot be answered at all. The split is made by skinning, not by texture region, because the skinning is the only part of the asset that knows where the tail is: a vertex belongs to the tail when the bone with the greatest say over it is n47 or one of its descendants, which is the same question as \"does this move when the tail moves\". 7,061 of 19,999 faces. Both halves keep the same texture and the same UVs, so nothing is repainted; `replace` mode then shifts the tail's hue while every scale, seam and highlight survives, and skin takes `ratio` so a face modelled in one colour does not come out painted in another.\n\nOne warning about this map, because removing an entry from it once cost her whole body. `chest` names n72, which is a skinned leaf and not a joint -- it deforms the chest and carries nothing below it -- and the swim animator must not aim it: doing that does not swing anything, it crushes the skin hanging off the bone, and it put a black hole through her middle. The obvious tidy-up is to delete the entry so nothing can drive it, and that is wrong: the loader requires hips, chest, head and both arms before it will treat a rig as poseable at all, so without this line she is not used and the game silently falls back to the generated stand-in body. The entry stays and the animator's trunk list is what decides what is driven -- which is spine alone, pointing at n71, the joint that actually carries the upper body.\n\n`doubleSided` is off, and it was on for a while for a reason that turned out to be wrong. It was switched on to test whether a black triangle in her middle was three.js culling faces that were wound inward; it was not -- the cause was the swim animator aiming skinned leaf bones, see above -- so the flag was doing nothing but costing every face of her a second rasterisation. It is also actively bad for hair: her hair is thin sculpted cards, and drawing their back faces lit put pale streaks through the mass. The field stays in the manifest because it is the right thing for an asset whose winding genuinely cannot be trusted; it is simply not true of hers.",
+      "orientationDegrees": [
+        90,
+        0,
+        0
+      ],
+      "supplies": [
+        "hair",
+        "fluke",
+        "scales"
+      ],
+      "skeleton": {
+        "hips": "n69",
+        "spine": "n71",
+        "chest": "n72",
+        "neck": "n570",
+        "head": "n574",
+        "shoulderL": "n629",
+        "shoulderR": "n803",
+        "elbowL": "n631",
+        "elbowR": "n805",
+        "wristL": "n633",
+        "wristR": "n807",
+        "tail1": "n47",
+        "tail2": "n50",
+        "tail3": "n53",
+        "tailFin": "n54"
+      },
+      "clips": {},
+      "tints": {
+        "skin": {
+          "material": "body",
+          "mode": "ratio",
+          "reference": "#c9a288"
+        },
+        "tail": {
+          "material": "tail",
+          "mode": "replace"
+        },
+        "eyes": {
+          "material": "iris",
+          "mode": "iris"
+        }
+      },
+      "hide": [],
+      "doubleSided": false,
+      "matteMaterials": [
+        "HAIR__001"
+      ]
+    }
+  ]
+}
