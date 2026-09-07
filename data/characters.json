@@ -97,7 +97,13 @@
       "doubleSided": false,
       "matteMaterials": [
         "HAIR__001"
-      ]
+      ],
+      "dielectricMaterials": [
+        "body",
+        "tail",
+        "teeth_and_gum"
+      ],
+      "envMapBoost": 3
     }
   ]
 }
