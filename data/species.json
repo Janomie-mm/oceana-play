@@ -426,7 +426,8 @@
       "solitary",
       "open-water",
       "reef-associated"
-    ]
+    ],
+    "modelPath": "/models/species/manta.glb"
   },
   {
     "id": "eagleRay",
@@ -906,5 +907,69 @@
       "reef-associated"
     ],
     "modelPath": "/models/species/leopard-shark.glb"
+  },
+  {
+    "id": "japaneseSpiderCrab",
+    "commonName": "Japanese Spider Crab",
+    "scientificName": "Macrocheira kaempferi",
+    "habitat": "Rocky and sandy bottoms of the Pacific off Japan, deepest as adults and shallower to breed",
+    "diet": "Scavenged carrion, molluscs, algae and whatever the bottom gives up",
+    "lengthCm": [
+      180,
+      340
+    ],
+    "weightG": [
+      10000,
+      19000
+    ],
+    "lifespanYears": 100,
+    "threats": [
+      "Trawling",
+      "Targeted fishing during the spring breeding migration"
+    ],
+    "conservationStatus": "Not evaluated",
+    "funFacts": [
+      "It has the greatest leg span of any arthropod alive — up to 3.7 metres tip to tip.",
+      "The body stays about the size of a dinner plate however long the legs grow.",
+      "Individuals are thought to live a century, which would make them among the longest-lived animals in the sea.",
+      "It decorates its shell with sponges and anemones, so a resting one can be impossible to pick out from the seabed."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary"
+    ],
+    "modelPath": "/models/species/japanese-spider-crab.glb"
+  },
+  {
+    "id": "fiddlerCrab",
+    "commonName": "Banana Fiddler Crab",
+    "scientificName": "Austruca mjoebergi",
+    "habitat": "Intertidal sand and mudflats, in burrows the tide covers twice a day",
+    "diet": "Algae, bacteria and detritus sifted out of wet sand",
+    "lengthCm": [
+      2,
+      3
+    ],
+    "weightG": [
+      2,
+      6
+    ],
+    "lifespanYears": 2,
+    "threats": [
+      "Coastal development",
+      "Loss of mangrove and mudflat"
+    ],
+    "conservationStatus": "Not evaluated",
+    "funFacts": [
+      "The male has one claw many times the size of the other and waves it to attract a mate — the 'fiddling' the name comes from.",
+      "If he loses the big claw it regrows on the other side, and the old small one enlarges to replace it.",
+      "Males wave faster when a female is closer, and neighbouring males synchronise their waving.",
+      "It is the smallest animal in this ocean by a wide margin: three centimetres against the spider crab's three metres."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary"
+    ],
+    "modelPath": "/models/species/fiddler-crab.glb"
   }
 ]
