@@ -261,6 +261,39 @@
     ]
   },
   {
+    "id": "pufferFish",
+    "commonName": "Long-spine Porcupinefish",
+    "scientificName": "Diodon holocanthus",
+    "habitat": "Reef ledges and sandy flats beside them, by day under an overhang",
+    "diet": "Snails, hermit crabs and urchins, cracked with a fused beak",
+    "lengthCm": [
+      25,
+      40
+    ],
+    "weightG": [
+      600,
+      2800
+    ],
+    "lifespanYears": 10,
+    "threats": [
+      "Caught and dried whole for the curio trade",
+      "Loss of the reef ledges it shelters under by day"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "It has no scales. The spines are what scales became, and they lie flat along the body until they are needed.",
+      "It swallows water to inflate, not air, and can take in enough to double its width in a few seconds.",
+      "Inflating is expensive and slow to undo, so it is the last resort — it will swim, hide and bluff first.",
+      "Its teeth are fused into a single beak strong enough to crack a sea urchin, which is most of what it eats."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated"
+    ],
+    "modelPath": "/models/species/puffer-fish.glb"
+  },
+  {
     "id": "jellyfish",
     "commonName": "Pacific Sea Nettle",
     "scientificName": "Chrysaora fuscescens",
@@ -493,7 +526,8 @@
       "solitary",
       "reef-associated",
       "den-dwelling"
-    ]
+    ],
+    "modelPath": "/models/species/octopus.glb"
   },
   {
     "id": "nautilus",
@@ -776,7 +810,8 @@
       "schooling",
       "surfaces-for-air",
       "open-water"
-    ]
+    ],
+    "modelPath": "/models/species/humpback.glb"
   },
   {
     "id": "narwhal",
@@ -927,7 +962,7 @@
       "Trawling",
       "Targeted fishing during the spring breeding migration"
     ],
-    "conservationStatus": "Not evaluated",
+    "conservationStatus": "Not Evaluated",
     "funFacts": [
       "It has the greatest leg span of any arthropod alive — up to 3.7 metres tip to tip.",
       "The body stays about the size of a dinner plate however long the legs grow.",
@@ -959,7 +994,7 @@
       "Coastal development",
       "Loss of mangrove and mudflat"
     ],
-    "conservationStatus": "Not evaluated",
+    "conservationStatus": "Not Evaluated",
     "funFacts": [
       "The male has one claw many times the size of the other and waves it to attract a mate — the 'fiddling' the name comes from.",
       "If he loses the big claw it regrows on the other side, and the old small one enlarges to replace it.",
