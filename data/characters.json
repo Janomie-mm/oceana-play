@@ -8,7 +8,7 @@
       "licence": "CC BY 4.0 -- see CREDITS.md",
       "orientationDegrees": [
         0,
-        0,
+        180,
         0
       ],
       "stature": 1.784,
@@ -41,7 +41,7 @@
           0
         ]
       },
-      "note": "A scanned diver supplied as a still model: no skeleton, no clip. Given the RiggedFigure's skeleton here: the base joints scaled to his height, the neck and skull base raised to where a human's are, both arms re-aimed along his own, and the weights solved by tools/glb-autoskin.py (see CREDITS.md). He brings his own mask, tank and harness, so `gear` is supplied; his feet are bare, so the generated fins stay. Orientation is zero because he was turned y-up and face toward -Z at conversion. He also supplies `hair`: the scan's head is hooded, and the generated hair measured his skull off everything above the neck joint — which, with his arms scanned out and up, was his whole wingspan, and came out as a disc of hair two metres across.",
+      "note": "A scanned diver supplied as a still model: no skeleton, no clip. Given the RiggedFigure's skeleton here: the base joints scaled to his height, the neck and skull base raised to where a human's are, both arms re-aimed along his own, and the weights solved by tools/glb-autoskin.py (see CREDITS.md). He brings his own mask, tank, harness and fins, so `gear` is supplied and nothing is built over them. Half a turn about Y: the scan's face is toward +Z, which the creator showed as his back, and the rest pose then bent his head and knees the wrong way. He also supplies `hair`: the scan's head is hooded, and the generated hair measured his skull off everything above the neck joint — which, with his arms scanned out and up, was his whole wingspan, and came out as a disc of hair two metres across.",
       "supplies": [
         "gear",
         "hair"
