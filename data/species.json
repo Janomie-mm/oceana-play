@@ -971,7 +971,8 @@
     ],
     "activity": "nocturnal",
     "behaviorTags": [
-      "solitary"
+      "solitary",
+      "reef-associated"
     ],
     "modelPath": "/models/species/japanese-spider-crab.glb"
   },
@@ -1006,5 +1007,38 @@
       "solitary"
     ],
     "modelPath": "/models/species/fiddler-crab.glb"
+  },
+  {
+    "id": "fireflySquid",
+    "commonName": "Firefly Squid",
+    "scientificName": "Watasenia scintillans",
+    "habitat": "Deep water of the western Pacific, rising toward the surface at night and into shallow bays to spawn in spring",
+    "diet": "Small fish, copepods and other small crustaceans, hunted in the dark",
+    "lengthCm": [
+      6,
+      8
+    ],
+    "weightG": [
+      5,
+      10
+    ],
+    "lifespanYears": 1,
+    "threats": [
+      "Commercial fishing on the spring spawning grounds",
+      "Warming of the deep water it spends its days in",
+      "Light pollution over the bays it rises into"
+    ],
+    "conservationStatus": "Not Evaluated",
+    "funFacts": [
+      "Its whole body is studded with light organs, and the three largest sit on the tips of two of its arms.",
+      "It is one of very few animals thought to see in colour at depth: its eyes carry three visual pigments.",
+      "In Toyama Bay, Japan, the spring spawning run turns the shoreline blue with millions of them.",
+      "It lives about a year, rises to spawn once, and dies."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary"
+    ],
+    "modelPath": "/models/species/firefly-squid.glb"
   }
 ]
