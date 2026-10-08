@@ -3,15 +3,15 @@
     {
       "id": "diver",
       "title": "Diver",
-      "modelPath": "/models/base-character.glb",
-      "source": "Khronos glTF-Sample-Assets \"RiggedFigure\" (Cesium)",
-      "licence": "CC BY 4.0 — see CREDITS.md",
+      "modelPath": "/models/deep-diver.glb",
+      "source": "Sketchfab \"Deep Diver\" by Miguelangelo Rosario, rigged here -- see CREDITS.md",
+      "licence": "CC BY 4.0 -- see CREDITS.md",
       "orientationDegrees": [
         0,
         0,
         0
       ],
-      "stature": 1.4525,
+      "stature": 1.784,
       "skeleton": {},
       "clips": {},
       "sockets": {
@@ -41,7 +41,11 @@
           0
         ]
       },
-      "note": "Placeholder rig only — its mesh is a 370-vertex skinning proxy, so the body is generated (see avatar/body/). Replace with a rigged professional diver: wetsuit, mask, tank, gloves, fins, fingered hands, facial geometry, and a looping swim clip. Set clips.swim to its name and drop the generated body by leaving this modelPath pointing at the new file."
+      "note": "A scanned diver supplied as a still model: no skeleton, no clip. Given the RiggedFigure's skeleton here: the base joints scaled to his height, the neck and skull base raised to where a human's are, both arms re-aimed along his own, and the weights solved by tools/glb-autoskin.py (see CREDITS.md). He brings his own mask, tank and harness, so `gear` is supplied; his feet are bare, so the generated fins stay. Orientation is zero because he was turned y-up and face toward -Z at conversion. He also supplies `hair`: the scan's head is hooded, and the generated hair measured his skull off everything above the neck joint — which, with his arms scanned out and up, was his whole wingspan, and came out as a disc of hair two metres across.",
+      "supplies": [
+        "gear",
+        "hair"
+      ]
     },
     {
       "id": "merperson",
@@ -56,7 +60,6 @@
         0
       ],
       "supplies": [
-        "hair",
         "fluke",
         "scales"
       ],
@@ -93,17 +96,18 @@
           "mode": "iris"
         }
       },
-      "hide": [],
-      "doubleSided": false,
-      "matteMaterials": [
+      "hide": [
         "HAIR__001"
       ],
+      "doubleSided": false,
+      "matteMaterials": [],
       "dielectricMaterials": [
         "body",
         "tail",
         "teeth_and_gum"
       ],
-      "envMapBoost": 3
+      "envMapBoost": 3,
+      "hairModel": "/models/hair-nadu.glb"
     }
   ]
 }

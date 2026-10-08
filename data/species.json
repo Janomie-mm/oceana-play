@@ -1040,5 +1040,107 @@
       "solitary"
     ],
     "modelPath": "/models/species/firefly-squid.glb"
+  },
+  {
+    "id": "goldfish",
+    "commonName": "Goldfish",
+    "scientificName": "Carassius auratus",
+    "habitat": "Slow, weedy fresh water; escaped and released fish now live feral in lakes and estuaries on every inhabited continent",
+    "diet": "Insect larvae, small crustaceans, plant matter and detritus, picked off the bottom",
+    "lengthCm": [
+      15,
+      25
+    ],
+    "weightG": [
+      100,
+      300
+    ],
+    "lifespanYears": 12,
+    "threats": [
+      "None as a species — the threat it poses is to the waters it is released into",
+      "Fancy breeds suffer from the bodies bred into them",
+      "Cold and poor water in ornamental ponds"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "It was bred from the Prussian carp in China more than a thousand years ago, which makes it one of the oldest domesticated fish.",
+      "It can see ultraviolet light, and sees more colours than a person does.",
+      "It has no stomach: food passes straight along its gut, which is why it eats little and often.",
+      "Released into a lake it can grow to the size of a dinner plate and crowd out everything that lived there before."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated"
+    ],
+    "modelPath": "/models/species/goldfish.glb"
+  },
+  {
+    "id": "harborSeal",
+    "commonName": "Harbour Seal",
+    "scientificName": "Phoca vitulina",
+    "habitat": "Cold and temperate coasts of the northern hemisphere — sandbanks, rocky shores and the kelp beds off them",
+    "diet": "Fish, squid and crustaceans, taken on dives of a few minutes",
+    "lengthCm": [
+      150,
+      190
+    ],
+    "weightG": [
+      55000,
+      170000
+    ],
+    "lifespanYears": 30,
+    "threats": [
+      "Entanglement in fishing gear",
+      "Disturbance of haul-out beaches",
+      "Pollutants that build up in its fat"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "It sleeps underwater and rises to breathe without waking.",
+      "Each seal's pattern of spots is its own, like a fingerprint.",
+      "It can slow its heart to a few beats a minute on a dive and stay down for half an hour.",
+      "Its whiskers can follow the trail a fish left in the water several seconds after it passed."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "surfaces-for-air"
+    ],
+    "modelPath": "/models/species/harbor-seal.glb"
+  },
+  {
+    "id": "manatee",
+    "commonName": "West Indian Manatee",
+    "scientificName": "Trichechus manatus",
+    "habitat": "Warm, shallow coastal water, estuaries and rivers of the Caribbean and the southeastern United States, over beds of seagrass",
+    "diet": "Seagrass and other water plants — a tenth of its own weight a day",
+    "lengthCm": [
+      280,
+      350
+    ],
+    "weightG": [
+      400000,
+      550000
+    ],
+    "lifespanYears": 50,
+    "threats": [
+      "Boat strikes",
+      "Loss of seagrass to murky, polluted water",
+      "Cold snaps in water it cannot leave"
+    ],
+    "conservationStatus": "Vulnerable",
+    "funFacts": [
+      "Its closest living relatives are the elephants, not the seals or the whales.",
+      "Its teeth march forward through its jaw all its life, new molars growing at the back as the worn ones fall out at the front.",
+      "It has no natural predators; what kills manatees is boats, cold and starving seagrass.",
+      "Sailors took it for a mermaid, which says more about the sailors than about the manatee."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "surfaces-for-air"
+    ],
+    "modelPath": "/models/species/manatee.glb"
   }
 ]
