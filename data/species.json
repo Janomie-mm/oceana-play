@@ -67,39 +67,6 @@
     ]
   },
   {
-    "id": "moray",
-    "commonName": "Giant Moray",
-    "scientificName": "Gymnothorax javanicus",
-    "habitat": "Holes and crevices in coral reefs and wrecks",
-    "diet": "Fish and octopus, hunted after dark",
-    "lengthCm": [
-      150,
-      250
-    ],
-    "weightG": [
-      15000,
-      30000
-    ],
-    "lifespanYears": 30,
-    "threats": [
-      "Reef destruction",
-      "Aquarium collection",
-      "Ciguatera-driven fishing pressure"
-    ],
-    "conservationStatus": "Least Concern",
-    "funFacts": [
-      "The open mouth is not a threat — it has no gill covers, so it has to gape constantly to breathe.",
-      "A second set of jaws in its throat shoots forward to drag prey down, the only animal known to feed this way.",
-      "It hunts by smell, and reef fish will lead one to hidden prey and share the catch."
-    ],
-    "activity": "nocturnal",
-    "behaviorTags": [
-      "solitary",
-      "den-dwelling",
-      "reef-associated"
-    ]
-  },
-  {
     "id": "hammerhead",
     "commonName": "Scalloped Hammerhead",
     "scientificName": "Sphyrna lewini",
@@ -623,36 +590,6 @@
     ]
   },
   {
-    "id": "yetiCrab",
-    "commonName": "Yeti Crab",
-    "scientificName": "Kiwa tyleri",
-    "habitat": "Cold seeps and hydrothermal vents on the deep sea floor",
-    "diet": "Bacteria farmed on the bristles of its own claws",
-    "lengthCm": [
-      10,
-      15
-    ],
-    "weightG": [
-      60,
-      140
-    ],
-    "lifespanYears": 10,
-    "threats": [
-      "Deep-sea mining of vent fields",
-      "Extremely small and isolated populations"
-    ],
-    "conservationStatus": "Not Evaluated",
-    "funFacts": [
-      "The hair on its claws is a garden — it grows bacteria there and then combs them off and eats them.",
-      "It waves its claws through the chemical plume the way a farmer waters a crop.",
-      "It is blind, and it lives where sunlight has never reached, so the whole food chain around it runs on chemistry instead."
-    ],
-    "activity": "nocturnal",
-    "behaviorTags": [
-      "solitary"
-    ]
-  },
-  {
     "id": "starfish",
     "commonName": "Common Sea Star",
     "scientificName": "Asterias rubens",
@@ -681,38 +618,6 @@
     "behaviorTags": [
       "solitary",
       "reef-associated"
-    ]
-  },
-  {
-    "id": "seal",
-    "commonName": "Grey Seal",
-    "scientificName": "Halichoerus grypus",
-    "habitat": "Cold coastal water, kelp beds and rocky shores",
-    "diet": "Fish, squid and crustaceans",
-    "lengthCm": [
-      180,
-      260
-    ],
-    "weightG": [
-      150000,
-      310000
-    ],
-    "lifespanYears": 35,
-    "threats": [
-      "Entanglement in fishing gear",
-      "Disturbance at haul-out sites",
-      "Pollution"
-    ],
-    "conservationStatus": "Least Concern",
-    "funFacts": [
-      "A grey seal can hold its breath for well over twenty minutes.",
-      "Its whiskers track the wake a fish left behind, so it can hunt in total darkness.",
-      "Every seal's coat pattern is unique, which is how researchers tell them apart."
-    ],
-    "activity": "diurnal",
-    "behaviorTags": [
-      "solitary",
-      "surfaces-for-air"
     ]
   },
   {
@@ -942,39 +847,6 @@
       "reef-associated"
     ],
     "modelPath": "/models/species/leopard-shark.glb"
-  },
-  {
-    "id": "japaneseSpiderCrab",
-    "commonName": "Japanese Spider Crab",
-    "scientificName": "Macrocheira kaempferi",
-    "habitat": "Rocky and sandy bottoms of the Pacific off Japan, deepest as adults and shallower to breed",
-    "diet": "Scavenged carrion, molluscs, algae and whatever the bottom gives up",
-    "lengthCm": [
-      180,
-      340
-    ],
-    "weightG": [
-      10000,
-      19000
-    ],
-    "lifespanYears": 100,
-    "threats": [
-      "Trawling",
-      "Targeted fishing during the spring breeding migration"
-    ],
-    "conservationStatus": "Not Evaluated",
-    "funFacts": [
-      "It has the greatest leg span of any arthropod alive — up to 3.7 metres tip to tip.",
-      "The body stays about the size of a dinner plate however long the legs grow.",
-      "Individuals are thought to live a century, which would make them among the longest-lived animals in the sea.",
-      "It decorates its shell with sponges and anemones, so a resting one can be impossible to pick out from the seabed."
-    ],
-    "activity": "nocturnal",
-    "behaviorTags": [
-      "solitary",
-      "reef-associated"
-    ],
-    "modelPath": "/models/species/japanese-spider-crab.glb"
   },
   {
     "id": "fiddlerCrab",
