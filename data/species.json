@@ -653,38 +653,6 @@
     ]
   },
   {
-    "id": "whaleShark",
-    "commonName": "Whale Shark",
-    "scientificName": "Rhincodon typus",
-    "habitat": "Warm open ocean, often near the surface",
-    "diet": "Plankton and small fish, filtered from the water",
-    "lengthCm": [
-      550,
-      1200
-    ],
-    "weightG": [
-      9000000,
-      20000000
-    ],
-    "lifespanYears": 80,
-    "threats": [
-      "Ship strikes",
-      "Targeted and accidental fishing",
-      "Warming and shifting plankton blooms"
-    ],
-    "conservationStatus": "Endangered",
-    "funFacts": [
-      "The largest fish alive, and it eats almost nothing bigger than your fingernail.",
-      "Every whale shark's pattern of spots is unique, so researchers identify them the way we use fingerprints.",
-      "It filters over six thousand litres of water an hour and never has to bite anything."
-    ],
-    "activity": "diurnal",
-    "behaviorTags": [
-      "solitary",
-      "open-water"
-    ]
-  },
-  {
     "id": "humpback",
     "commonName": "Humpback Whale",
     "scientificName": "Megaptera novaeangliae",
