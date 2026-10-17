@@ -982,5 +982,72 @@
       "surfaces-for-air"
     ],
     "modelPath": "/models/species/manatee.glb"
+  },
+  {
+    "id": "tuna",
+    "commonName": "Atlantic Bluefin Tuna",
+    "scientificName": "Thunnus thynnus",
+    "habitat": "Open ocean, from the surface to several hundred metres, crossing whole oceans between feeding and spawning grounds",
+    "diet": "Herring, mackerel, sardines and squid, run down at speed",
+    "lengthCm": [
+      200,
+      300
+    ],
+    "weightG": [
+      150000,
+      450000
+    ],
+    "lifespanYears": 40,
+    "threats": [
+      "Overfishing for the sushi trade",
+      "Decades of illegal catches above quota",
+      "Warming of its spawning seas"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "It is warm-blooded: a web of blood vessels keeps its muscles up to 20 degrees warmer than the water, which is what lets it sprint in cold seas.",
+      "Its fins fold into grooves in the body, and the small yellow finlets along the tail cut turbulence — the shape of a torpedo.",
+      "A single fish can cross the Atlantic in under two months, and some have been tracked doing it more than once a year.",
+      "The species was listed as Endangered in 2011 and was moved to Least Concern in 2021 after catches were cut — one of the few fish to have come back."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "open-water"
+    ],
+    "modelPath": "/models/species/tuna.glb"
+  },
+  {
+    "id": "redSnapper",
+    "commonName": "Red Snapper",
+    "scientificName": "Lutjanus campechanus",
+    "habitat": "Reefs, wrecks and rocky bottom between ten and ninety metres, in the Gulf of Mexico and the western Atlantic",
+    "diet": "Small fish, shrimp, crabs and squid, taken near the bottom",
+    "lengthCm": [
+      40,
+      100
+    ],
+    "weightG": [
+      2000,
+      20000
+    ],
+    "lifespanYears": 50,
+    "threats": [
+      "Heavy fishing pressure",
+      "Caught as bycatch in shrimp trawls",
+      "Loss of reef and wreck structure"
+    ],
+    "conservationStatus": "Vulnerable",
+    "funFacts": [
+      "The red deepens with age and depth; a young one in shallow water is pink with a dark spot on its side that fades as it grows.",
+      "It gathers in loose schools over wrecks and rock, and a sunken ship can hold hundreds of them.",
+      "It can live for half a century, and the biggest, oldest fish produce vastly more eggs than the young ones — which is why fishing out the large ones hurts the species most."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "reef-associated"
+    ],
+    "modelPath": "/models/species/red-snapper.glb"
   }
 ]
