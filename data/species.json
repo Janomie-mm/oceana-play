@@ -1084,5 +1084,39 @@
       "reef-associated"
     ],
     "modelPath": "/models/species/butterflyfish.glb"
+  },
+  {
+    "id": "seahorse",
+    "commonName": "Lined Seahorse",
+    "scientificName": "Hippocampus erectus",
+    "habitat": "Seagrass beds, mangrove roots and the edges of reefs in the western Atlantic, holding on with its tail",
+    "diet": "Tiny shrimp and plankton, sucked in through the snout one at a time",
+    "lengthCm": [
+      12,
+      19
+    ],
+    "weightG": [
+      8,
+      15
+    ],
+    "lifespanYears": 4,
+    "threats": [
+      "Loss of seagrass beds",
+      "Caught for the curio and medicine trades",
+      "Bycatch in shrimp trawls"
+    ],
+    "conservationStatus": "Vulnerable",
+    "funFacts": [
+      "The male carries the eggs in a pouch on his belly and gives birth to the young.",
+      "It swims upright with a fin on its back that beats up to fifty times a second, and still it is one of the slowest fish in the sea.",
+      "Its eyes move independently, like a chameleon's, so it can watch for food and for danger at once.",
+      "Pairs greet each other every morning with a short dance, and stay together for the season."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated"
+    ],
+    "modelPath": "/models/species/seahorse.glb"
   }
 ]
