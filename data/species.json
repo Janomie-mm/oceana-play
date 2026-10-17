@@ -1118,5 +1118,70 @@
       "reef-associated"
     ],
     "modelPath": "/models/species/seahorse.glb"
+  },
+  {
+    "id": "damselfish",
+    "commonName": "Yellowtail Damselfish",
+    "scientificName": "Microspathodon chrysurus",
+    "habitat": "Shallow Caribbean reefs, among fire coral and branching coral heads, each fish guarding its own patch",
+    "diet": "Algae grazed off the coral, and the polyps of fire coral",
+    "lengthCm": [
+      12,
+      20
+    ],
+    "weightG": [
+      40,
+      120
+    ],
+    "lifespanYears": 8,
+    "threats": [
+      "Reef degradation",
+      "Coral bleaching",
+      "Capture for aquariums"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "The young are dark blue-black scattered with electric blue spots — the \"jewelfish\" — and lose the spots as they grow.",
+      "It is one of the few fish that eats fire coral, and it farms a patch of algae on the reef that it defends against anything, divers included.",
+      "An adult turns a plainer brown with the bright yellow tail the species is named for."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated"
+    ],
+    "modelPath": "/models/species/damselfish.glb"
+  },
+  {
+    "id": "bobtailSquid",
+    "commonName": "Hawaiian Bobtail Squid",
+    "scientificName": "Euprymna scolopes",
+    "habitat": "Shallow sand and seagrass, buried by day with only the eyes showing, out hunting by night",
+    "diet": "Small shrimp and crustaceans, taken at night",
+    "lengthCm": [
+      3,
+      6
+    ],
+    "weightG": [
+      3,
+      8
+    ],
+    "lifespanYears": 1,
+    "threats": [
+      "Loss of shallow seagrass and sand habitat",
+      "Coastal pollution"
+    ],
+    "conservationStatus": "Data Deficient",
+    "funFacts": [
+      "It carries glowing bacteria in a pouch under its body and shines downward at night, so from below it casts no shadow against the moonlit surface.",
+      "By day it buries itself in the sand, gluing grains to its skin as a coat and shrugging the coat off when it leaves.",
+      "It lives less than a year, and the glowing bacteria have to be collected fresh by every hatchling from the water."
+    ],
+    "activity": "nocturnal",
+    "behaviorTags": [
+      "solitary",
+      "reef-associated"
+    ],
+    "modelPath": "/models/species/bobtail-squid.glb"
   }
 ]
