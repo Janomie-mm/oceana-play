@@ -36,35 +36,37 @@
   },
   {
     "id": "reefShark",
-    "commonName": "Reef Shark",
-    "scientificName": "Carcharhinus melanopterus",
-    "habitat": "Shallow coral reefs and lagoons",
-    "diet": "Small reef fish, cephalopods, and crustaceans",
+    "commonName": "Caribbean Reef Shark",
+    "scientificName": "Carcharhinus perezi",
+    "habitat": "Coral reefs and reef drop-offs of the Caribbean and the western Atlantic, from the shallows to about sixty metres",
+    "diet": "Reef fish, rays, squid and octopus, hunted mostly at night",
     "lengthCm": [
-      120,
-      180
+      150,
+      250
     ],
     "weightG": [
-      18000,
-      45000
+      50000,
+      70000
     ],
     "lifespanYears": 25,
     "threats": [
-      "Overfishing",
-      "Finning",
-      "Reef habitat loss"
+      "Fishing for fins and meat",
+      "Reef degradation",
+      "Slow breeding — four to six pups every two years"
     ],
-    "conservationStatus": "Vulnerable",
+    "conservationStatus": "Endangered",
     "funFacts": [
-      "Reef sharks often rest motionless on the sand by pumping water over their gills.",
-      "They are naturally cautious of large, unfamiliar movement.",
-      "Pups are born fully independent and receive no parental care."
+      "It is the shark of Caribbean reef dives: the one most often met on a wall, cruising past without interest.",
+      "It can lie still on the bottom and pump water over its gills, which most sharks cannot do — divers have found them resting in caves.",
+      "It senses the faint electric fields of hidden fish with pores along its snout, and hunts by them after dark.",
+      "Listed as Endangered in 2020 after its numbers fell across most of its range."
     ],
     "activity": "nocturnal",
     "behaviorTags": [
       "solitary",
       "reef-associated"
-    ]
+    ],
+    "modelPath": "/models/species/reef-shark.glb"
   },
   {
     "id": "hammerhead",
@@ -1049,5 +1051,38 @@
       "reef-associated"
     ],
     "modelPath": "/models/species/red-snapper.glb"
+  },
+  {
+    "id": "butterflyfish",
+    "commonName": "Copperband Butterflyfish",
+    "scientificName": "Chelmon rostratus",
+    "habitat": "Coral reefs, rocky shores and estuaries of the Indo-Pacific, usually in a pair",
+    "diet": "Small worms, crustaceans and coral polyps, picked out of crevices with its long snout",
+    "lengthCm": [
+      15,
+      20
+    ],
+    "weightG": [
+      60,
+      110
+    ],
+    "lifespanYears": 10,
+    "threats": [
+      "Capture for the aquarium trade",
+      "Reef degradation",
+      "Coral bleaching"
+    ],
+    "conservationStatus": "Least Concern",
+    "funFacts": [
+      "The black spot on its rear fin is a false eye: a predator strikes the wrong end and the fish darts off the other way.",
+      "Its snout is a pair of tweezers for pulling worms out of holes too narrow for any other fish.",
+      "Pairs form young and stay together for years, patrolling the same stretch of reef."
+    ],
+    "activity": "diurnal",
+    "behaviorTags": [
+      "schooling",
+      "reef-associated"
+    ],
+    "modelPath": "/models/species/butterflyfish.glb"
   }
 ]
